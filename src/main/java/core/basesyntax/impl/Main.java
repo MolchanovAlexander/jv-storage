@@ -10,10 +10,10 @@ public class Main {
         Box b4 = Box.of(4, "guf4");
 
         Storage<Integer, Box> storage = new StorageImpl<>();
-        storage.put(null, b1);
+        storage.put(11, b1);
         storage.put(22, b2);
         storage.put(33, b3);
-        storage.put(22, b4);
+        storage.put(null, b4);
 
         Box value1 = storage.get(null); // returns the Box
         Box value2 = storage.get(22); // returns the Box

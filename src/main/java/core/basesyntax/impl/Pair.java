@@ -41,4 +41,12 @@ class Pair<K, V> {
                 && (pair.getValue() == value
                 || (pair.getValue() != null && pair.getValue().equals(value)));
     }
+
+    @Override
+    public String toString() {
+        return "Pair{" +
+                "key=" + key +
+                ", value=" + value +
+                '}';
+    }
 }
